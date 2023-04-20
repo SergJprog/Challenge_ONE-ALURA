@@ -3,140 +3,85 @@
 * {
   margin: 0;
   list-style: none;
+  font-family:'Montserrat', sans-serif;
 }
 
 body {
   background: #e5e5e5;
 }
 
-header h1 {
-  margin: 40px;
-}
-
-.seccion-ingrese-texto {
+.contenedor{
   position: relative;
+  width:1440px;
+  height:100vh;
+  margin: 0 auto;
+  background-color:#E9ECF8;
+
 }
 
-.seccion-ingrese-texto textarea {
-  position: absolute;
-  width: 577px;
-  background-color: #e5e5e5;
-  top: 125px;
-  left: 300px;
-  line-height: 150%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  color: #0a3871;
-  border: none;
-  outline: none;
+.logo{
+  position:absolute;
+  margin:40px;
+}
+
+
+.seccion-ingrese-texto{
+  position:absolute;
+  top:168px;
+  left:240px;
+
+}
+
+#texto{
+  background-color: #E9ECF8;
+  width:577px;
+  height:575px;
+  border:none;
   resize: none;
-}
-#texto::placeholder {
-  color: #0a3871;
-  font-weight: bold;
+  outline:none;
+  font-size:32px;
+  color:#0A3871;
+  
 }
 
-.informacion {
+#texto::placeholder{
+  font-size:32px;
+  color:#0A3871;
+  
+}
+
+.informacion{
+  display:flex;
+  align-items:center;
+  margin-bottom:16px;
+  gap:8px;
+ 
+}
+
+.caja-botones{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 10px;
-
-  position: absolute;
-  width: 262px;
-  height: 18px;
-  left: 240px;
-  top: 650px;
+   width:680px;
+   height:67px;
+   gap:8px;
 }
 
-.caja-botones {
-  display: flex;
+.botones{
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  top: 680px;
-}
-
-#btn-ecriptar {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
+  justify-content: center;
   width: 328px;
   height: 67px;
-
-  /* Dark blue/dark-blue-300 */
-
-  background: #0a3871;
-  border-radius: 24px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  border-radius:24px;
+  border:1px solid #0A3871;
 }
 
-#btn-desecriptar {
-  box-sizing: border-box;
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-
-  width: 328px;
-  height: 67px;
-
-  /* Light gray */
-
-  background: #d8dfe8;
-  /* Dark blue/dark-blue-300 */
-
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+#btn-encriptar{
+  background-color: #0A3871;
+  color: white;
 }
 
-
-#btn-ecriptar p{
- /* Button */
-
-
-width: 280px;
-height: 19px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-/* White */
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 1;
+#btn-desencriptar{
+  background-color:#D8DFE8;
+  color:#0A3871;
+  border:1px solid #0A3871;
+ 
 }
