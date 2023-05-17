@@ -22,12 +22,13 @@
                 <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
 
                 <div class="informacion">
+                    <textarea class="mensaje" cols="30" rows="10"></textarea>
                     <img src="imagenes/bi_exclamation-circle-fill-1.png" alt="bi_exclamation-circle-fill-1.png">
                     <p>Solo letras minúsculas y sin acentos.</p>
 
                 </div>
                 <div class="caja-botones">
-                    <input type="button" id="btn-encriptar" class="botones" value="Encriptar" />
+                    <input type="button" id="btn-encriptar" class="botones" value="Encriptar" onclick="activarBtn()" />
 
 
                     <input type="button" id="btn-desencriptar" class="botones" value=" Desencriptar" />
@@ -44,6 +45,8 @@
     <footer>
         <p>&copy;Sergio Robles</p>
     </footer>
+
+    <script src="funciones.js"></script>
 </body>
 
 </html>
